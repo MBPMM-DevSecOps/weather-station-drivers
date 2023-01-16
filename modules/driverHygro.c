@@ -14,7 +14,7 @@ static struct proc_dir_entry *my_proc_file;
 static ssize_t my_read(struct file *file, char __user *buffer, size_t length, loff_t *offset)
 {
     pr_info("%s my_read handler\n", FILE_NAME);
-    char greeting[] = "Hello World !\n";
+    char greeting[] = "5";
     int greeting_length = strlen(greeting);
  if (*offset > 0)
   return 0;
@@ -34,7 +34,7 @@ char charValue = number+'0';
 pr_info("number generated", greeting_length);
 //printk(charValue, "number generated");
 
-copy_to_user(buffer, charValue, greeting_length);
+copy_to_user(buffer, greeting, greeting_length);
 *offset = greeting_length;
 
  return greeting_length;

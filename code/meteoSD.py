@@ -12,6 +12,7 @@ while True:
 	time.sleep(15.0 - ((time.time() - starttime) % 15.0))
 	current_GMT = time.gmtime()
 	time_stamp = calendar.timegm(current_GMT)
+	time_stamp = time_stamp * 1000
 	driverHygro = randrange(10)
 	driverTemp = randrange(40)
 	driverSensVent = randrange(360)

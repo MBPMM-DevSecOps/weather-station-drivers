@@ -1,0 +1,1 @@
+cmd_/home/RaspberryPi/weather-station-drivers/modules/modules.order := {   echo /home/RaspberryPi/weather-station-drivers/modules/driverHygro.ko; :; } | awk '!x[$$0]++' - > /home/RaspberryPi/weather-station-drivers/modules/modules.order

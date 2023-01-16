@@ -7,7 +7,7 @@
 //#include <stdio.h>
 //#include "/usr/include/stdio.h"
 //#include "/usr/include/"
-#define FILE_NAME "driverHygro"
+#define FILE_NAME "driverForceVent"
 
 static struct proc_dir_entry *my_proc_file;
 
