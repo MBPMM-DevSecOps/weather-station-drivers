@@ -1,0 +1,4 @@
+/modules/*.mod
+/modules/*.mod.c
+/modules/*.o
+/modules/*.ko

@@ -1,1 +1,0 @@
-cmd_/home/RaspberryPi/weather-station-drivers/modules/driverHygro.mod := { echo  /home/RaspberryPi/weather-station-drivers/modules/driverHygro.o;  echo; } > /home/RaspberryPi/weather-station-drivers/modules/driverHygro.mod
