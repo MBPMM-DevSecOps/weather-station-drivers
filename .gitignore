@@ -2,3 +2,7 @@
 /modules/*.mod.c
 /modules/*.o
 /modules/*.ko
+/modules/*.order
+/modules/*.symvers
+/modules/*.cmd
+/modules/*.tmp_versions

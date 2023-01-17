@@ -13,9 +13,10 @@ while True:
 	current_GMT = time.gmtime()
 	time_stamp = calendar.timegm(current_GMT)
 
-	f = open("/proc/driverHygro","r")
-	driverHygro = f.read()
-	print(driverHygro)
+	#f = open("/proc/driverHygro","r")
+	#driverHygro = f.read()
+	#print(driverHygro)
+	driverHygro = "test"
 	driverTemp = randrange(40)
 	driverSensVent = randrange(360)
 	driverForceVent = randrange(5)

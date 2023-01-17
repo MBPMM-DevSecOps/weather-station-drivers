@@ -7,9 +7,10 @@ from random import randrange
 from datetime import datetime
 starttime = time.time()
 csvDataWeather = '/data/weather-station/data-weather-station.csv'
+print("Lancement du programme")
 while True:
-	print("Récupération des données")
 	time.sleep(15.0 - ((time.time() - starttime) % 15.0))
+	print("Récupération des données")
 	current_GMT = time.gmtime()
 	time_stamp = calendar.timegm(current_GMT)
 	time_stamp = time_stamp * 1000
