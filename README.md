@@ -20,12 +20,17 @@ insmod driverHygro.ko
 python3 meteoSD.py
 ```
 
+## Commande Cron
+
+```bash
+@reboot python3 /home/RaspberryPi/weather-station-drivers/code/meteoSD.py > /home/RaspberryPi/weather-station-drivers/code/meteoSDlog.txt
+```
 
 ## Fonctionnement
 
 Les drivers permettent de générer des chiffres aléatoires qui sont ensuite récupérés toutes les 15 secondes par le programme de récupération.
 Les chiffres sont ensuite compilés par le programme et ajoutés dans un fichier CSV nommé data-weather-station.csv.
 
-@reboot python3 /home/RaspberryPi/weather-station-drivers/code/meteoSD.py > /home/RaspberryPi/weather-station-drivers/code/meteoSDlog.txt
+
 
 
